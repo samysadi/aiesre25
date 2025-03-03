@@ -279,10 +279,6 @@ body {
         display: block;
     }
 
-    .navbar-nav .dropdown.show .dropdown-menu {
-        display: block;
-    }
-
     .navbar-nav .open-dropdown .dropdown-menu {
         text-align: center;
         border-bottom: 1px solid #35B53B;
