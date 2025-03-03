@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        <link href="assets/css/main.css?v=1741010140" rel="stylesheet" />
+        <link href="assets/css/main.css?v=1741033700" rel="stylesheet" />
     <link href="assets/css/main-ltr.css?v=1740917542" rel="stylesheet" />
 </head>
 
@@ -81,6 +81,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./about.html">About the conference</a></li>
                             <li><a class="dropdown-item" href="./topics.html">Themes and topics</a></li>
+                            <li><a class="dropdown-item" href="./topics.html#section-speakers">Plenary Speakers</a></li>
                             <li><a class="dropdown-item" href="./contact.html">Contact and venue</a></li>
                         </ul>
                     </li>
@@ -137,25 +138,25 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    const touchEvent = isTouchDevice ? "touchend" : null;
+    document.addEventListener("DOMContentLoaded", function() {
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        const touchEvent = isTouchDevice ? "touchend" : null;
 
-    document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-        const toggleDropdown = function(event) {
-            event.preventDefault();
-            let parent = this.closest(".nav-item.dropdown");
-            parent.classList.toggle("open-dropdown");
-        };
+        document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
+            const toggleDropdown = function(event) {
+                event.preventDefault();
+                let parent = this.closest(".nav-item.dropdown");
+                parent.classList.toggle("open-dropdown");
+            };
 
-        link.addEventListener("click", toggleDropdown);
-        link.addEventListener("dblclick", toggleDropdown);
+            link.addEventListener("click", toggleDropdown);
+            link.addEventListener("dblclick", toggleDropdown);
 
-        if (touchEvent) {
-            link.addEventListener(touchEvent, toggleDropdown);
-        }
+            if (touchEvent) {
+                link.addEventListener(touchEvent, toggleDropdown);
+            }
+        });
     });
-});
 </script>
 <!-- Submission -->
 <section class="page section" id="section-submission">

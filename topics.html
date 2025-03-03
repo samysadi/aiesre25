@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    <link href="assets/css/main.css?v=1741010140" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    <link href="assets/css/main.css?v=1741033700" rel="stylesheet" />
     <link href="assets/css/main-ltr.css?v=1740917542" rel="stylesheet" />
 </head>
 
@@ -81,6 +81,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./about.html">About the conference</a></li>
                             <li><a class="dropdown-item" href="./topics.html">Themes and topics</a></li>
+                            <li><a class="dropdown-item" href="./topics.html#section-speakers">Plenary Speakers</a></li>
                             <li><a class="dropdown-item" href="./contact.html">Contact and venue</a></li>
                         </ul>
                     </li>
@@ -137,29 +138,29 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    const touchEvent = isTouchDevice ? "touchend" : null;
+    document.addEventListener("DOMContentLoaded", function() {
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        const touchEvent = isTouchDevice ? "touchend" : null;
 
-    document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-        const toggleDropdown = function(event) {
-            event.preventDefault();
-            let parent = this.closest(".nav-item.dropdown");
-            parent.classList.toggle("open-dropdown");
-        };
+        document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
+            const toggleDropdown = function(event) {
+                event.preventDefault();
+                let parent = this.closest(".nav-item.dropdown");
+                parent.classList.toggle("open-dropdown");
+            };
 
-        link.addEventListener("click", toggleDropdown);
-        link.addEventListener("dblclick", toggleDropdown);
+            link.addEventListener("click", toggleDropdown);
+            link.addEventListener("dblclick", toggleDropdown);
 
-        if (touchEvent) {
-            link.addEventListener(touchEvent, toggleDropdown);
-        }
+            if (touchEvent) {
+                link.addEventListener(touchEvent, toggleDropdown);
+            }
+        });
     });
-});
 </script>
 
 <!-- Themes and topics -->
-<section class="page section" id="section-topics">
+<section class="page section pb-3" id="section-topics">
     <header>
         <div class="container">
             <h2 class="section-title">Themes and Topics</h2>
@@ -273,6 +274,432 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </section>
 
+
+<!-- Speakers -->
+<section class="page section pb-3" id="section-speakers">
+    <header>
+        <div class="container">
+            <h2 class="section-title">Plenary Speakers</h2>
+        </div>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3 justify-content-center">
+                <div class="col">
+                    <div class="card rounded-5 shadow-sm speaker-card h-100" data-bs-toggle="modal"
+                        data-bs-target="#speakers-modals-speaker1">
+                        <div class="card-body text-center">
+                            <img src="assets/img/speakers/daniel-cook.jpg" alt="Speaker illustration"
+                                class="img-fluid" />
+                            <span class="speaker-name d-block">Daniel Cook</span>
+                            <span class="speaker-aff d-block">President - Conservation Solutions Corporation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-5 shadow-sm speaker-card h-100" data-bs-toggle="modal"
+                        data-bs-target="#speakers-modals-speaker2">
+                        <div class="card-body text-center">
+                            <img src="assets/img/speakers/frede-blaabjerg.jpg" alt="Speaker illustration"
+                                class="img-fluid" />
+                            <span class="speaker-name d-block">Professor Frede Blaabjerg</span>
+                            <span class="speaker-aff d-block">IEEE Fellow and Villum Investigator<br />
+                                Leading Expert in Power Electronics and Renewable Energy Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-5 shadow-sm speaker-card h-100" data-bs-toggle="modal"
+                        data-bs-target="#speakers-modals-speaker3">
+                        <div class="card-body text-center">
+                            <img src="assets/img/speakers/hacib-benaissa.jpg" alt="Speaker illustration"
+                                class="img-fluid" />
+                            <span class="speaker-name d-block">Dr. Hacib BEN AISSA</span>
+                            <span class="speaker-aff d-block">Product Development Manager<br />
+                                Lynas Rare Earth Ltd., Malaysia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-5 shadow-sm speaker-card h-100" data-bs-toggle="modal"
+                        data-bs-target="#speakers-modals-speaker4">
+                        <div class="card-body text-center">
+                            <img src="assets/img/speakers/hamid-laga.jpg" alt="Speaker illustration"
+                                class="img-fluid" />
+                            <span class="speaker-name d-block">Professor Hamid Laga</span>
+                            <span class="speaker-aff d-block">School of Information Technology<br />
+                                Murdoch University<br />
+                                Murdoch, WA, Australia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-5 shadow-sm speaker-card h-100" data-bs-toggle="modal"
+                        data-bs-target="#speakers-modals-speaker5">
+                        <div class="card-body text-center">
+                            <img src="assets/img/speakers/tedjani-mesbahi.jpg" alt="Speaker illustration"
+                                class="img-fluid" />
+                            <span class="speaker-name d-block">Dr. Tedjani Mesbahi</span>
+                            <span class="speaker-aff d-block">Associate Professor (McF HdR)<br />
+                                INSA Strasbourg<br />
+                                ICube-CNRS laboratory, France</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal speaker-modal fade" id="speakers-modals-speaker1" tabindex="-1" aria-labelledby="modalLabel-spk1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl topic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-spk1">Energy Management and Storage with Bio-Based Phase Change
+                    Materials
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row align-items-center g-2">
+                    <div class="col-auto">
+                        <img src="assets/img/speakers/daniel-cook.jpg" alt="Speaker illustration"
+                            class="img-fluid rounded-circle" width="100" height="100" />
+                    </div>
+                    <div class="col">
+                        <div class="author-info">
+                            <h5 class="mb-1">By Daniel Cook</h5>
+                            <p class="author-title mb-1">President - Conservation Solutions Corporation</p>
+                            <a href="http://www.conservationsolutions.com" class="author-link"
+                                target="_blank">www.conservationsolutions.com</a>
+                            <p class="company-name mb-0"><img src="assets/img/speakers/misc/conssol-logo.jpg"
+                                    alt="Conservation Solutions Corporation" class="img-fluid" width="300"
+                                    height="300" /></p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p>Thermal Energy Storage presents a significant opportunity to reduce peak load energy demand and
+                    reduce the size of HVAC
+                    equipment. Reducing peak demand lowers the power requirements to maintain the grid, improve electric
+                    load and heating,
+                    cooling and process system reliability.</p>
+
+                <h4>Other Phase Change Materials</h4>
+                <p>Phase change materials such as ice have a limited range in which to optimize latent energy storage at
+                    32°F and have issues with
+                    expansion and contraction shortening equipment life. Eutectic salts have a larger range in which to
+                    store latent energy but have
+                    issues with corrosion and a shorter operating life.</p>
+                <h4>BioPCM Advantages</h4>
+                <p>Bio-Based Phase Change Materials (BioPCMs) are renewably derived from vegetable oils and their
+                    by-products. They have a wide
+                    range of opportunities to set melt / freeze temperature from minus 70°C up to 175°C. They have
+                    minimal expansion and
+                    contraction issues with solid-to-gel, or solid-to-solid transitions. Latent heat of fusion varies
+                    from 150-275 kJ/kg.</p>
+                <p>1” of BioPCM stores as much thermal energy as 24” of concrete and has tunable thermal conductivity
+                    from 0.1-10 W/mK.
+                    BioPCMs are non-toxic and biodegradable with long term stability >100 years of thermal cycling with
+                    no thermal degradation.</p>
+                <h4>Optimize Battery Energy Storage Efficiency</h4>
+                <p>Battery Energy Storage Systems (BESS) are used as power protection systems for data centers (DC) and
+                    in large utility power
+                    distribution systems to provide back-up electricity during a power outage. During an outage when the
+                    batteries discharge, a large
+                    amount of heat is generated. The installed HVAC systems draw a significant part of the stored
+                    battery power to offset this
+                    generated heat. This reduces the power delivered downstream and reduces resiliency.</p>
+                <p>BioPCM systems have successfully offset approximately 41kW of heat generated by battery discharge
+                    over a 4-6 hour window
+                    and deliver the greatest amount of downstream electrical power using only 400 watts of power to
+                    maintain the shelter at 25°C
+                    with the BioPCM system during an event.</p>
+                <h4>Hot and Chilled Water System Storage Opportunities</h4>
+                <p>Other applications include thermal storage for solar water heating systems, geothermal systems,
+                    enabling hot water (boiler) and
+                    chilled water (Chiller) HVAC system peak demand to be reduced, and provide back-up heating and
+                    cooling when system go down
+                    as well as many other applications including agriculture, pharma and manufacturing.</p>
+                <h4>Reduce Chiller or Boiler Short Cycling and Save Energy</h4>
+                <p>Successful projects include reducing short cycling of chillers for a large manufacturer resulting in
+                    a 50% reduction in maintenance
+                    costs and 22% energy savings.</p>
+                <h4>Domestic Hot Water Systems - Reduce Heat Pump Size</h4>
+                <p>Storing large amounts of latent energy enables the thermal energy storage system footprint to be
+                    significantly reduced. BioPCM
+                    can be coupled with heat pumps to enable a 50% - 65% reduction in heat pump size for domestic hot
+                    water systems with a much
+                    smaller footprint than a water storage tank.</p>
+                <h4>Portable Bio Based Phase Change Units</h4>
+                <p>Portable Bio-based phase change systems are designed to satisfy the needs of a wide range of
+                    applications in the logistics
+                    industry, cold storage facilities and industrial applications weather it is heating or cooling to
+                    maintain reliable temperature
+                    control.</p>
+                <h4>Cold Chain Logistics / Refrigerated Truck Transportation</h4>
+                <p>Bio-based phase change systems can be installed in trucks to maintain desired temperatures to
+                    complete last-mile approach with
+                    sustainability at the forefront.</p>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal -->
+<div class="modal speaker-modal fade" id="speakers-modals-speaker2" tabindex="-1" aria-labelledby="modalLabel-spk2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl topic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-spk2">Challenges of Renewable Energy Integration in Clean Energy
+                    Systems
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row align-items-center g-2">
+                    <div class="col-auto">
+                        <img src="assets/img/speakers/frede-blaabjerg.jpg" alt="Speaker illustration"
+                            class="img-fluid rounded-circle" width="100" height="100" />
+                    </div>
+                    <div class="col">
+                        <div class="author-info">
+                            <h5 class="mb-1">By Professor Frede Blaabjerg</h5>
+                            <p class="author-title mb-1">IEEE Fellow and Villum Investigator</br>
+                                Leading Expert in Power Electronics and
+                                Renewable Energy Systems</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p><strong>Professor Frede Blaabjerg</strong>, IEEE Fellow (F'03), is a distinguished
+                    power electronics expert with a PhD in Electrical Engineering from
+                    Aalborg University (1995). He has held academic positions at Aalborg
+                    University, including Full Professor of Power Electronics and Drives,
+                    and has been a Villum Investigator since 2017. Blaabjerg's research
+                    interests span power electronics applications in wind turbines, PV
+                    systems, reliability, Power-2-X, power quality, and adjustable speed
+                    drives. With over 800 journal papers and ten monographs, he has
+                    received numerous accolades, including 46 IEEE Prize Paper Awards,
+                    the IEEE Edison Medal in 2020, and the Global Energy Prize in 2019.
+                    He served as Editor-in-Chief of IEEE Transactions on Power Electronics
+                    and has held leadership roles such as President of the IEEE Power
+                    Electronics Society (2019-2020). Blaabjerg was nominated by
+                    Thomson Reuters as one of the top 250 cited engineers globally
+                    (2014-2021).</p>
+
+                <h4>Challenges of Renewable Energy Integration in Clean Energy
+                    Systems</h4>
+                <p>In this talk, Professor Blaabjerg will address the complex transition
+                    from fossil-based energy to renewables. This shift necessitates highly
+                    efficient power electronics technology for energy conversion,
+                    distribution, and end-user applications. Professor Blaabjerg will focus
+                    on the role of advanced power electronics and control solutions in
+                    integrating renewable energies such as wind and photovoltaics into the
+                    grid, addressing issues of technology development, power converter
+                    technologies, system control, and synchronization. Additionally, he will
+                    explore future trends aimed at reducing energy costs and developing
+                    new power devices and tools to enhance system reliability, which are
+                    essential.</p>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal -->
+<div class="modal speaker-modal fade" id="speakers-modals-speaker3" tabindex="-1" aria-labelledby="modalLabel-spk3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl topic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-spk3">Energy Transition and Industry Decarbonisation: Emerging
+                    Pathways and Technologies
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row align-items-center g-2">
+                    <div class="col-auto">
+                        <img src="assets/img/speakers/hacib-benaissa.jpg" alt="Speaker illustration"
+                            class="img-fluid rounded-circle" width="100" height="100" />
+                    </div>
+                    <div class="col">
+                        <div class="author-info">
+                            <h5 class="mb-1">By Dr. Hacib BEN AISSA</h5>
+                            <p class="author-title mb-1">Product Development Manager<br />
+                                Lynas Rare Earth Ltd., Malaysia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p><strong>Dr. Hacib Benaissa</strong>'s experience extends over 21 years and includes positions at
+                    different
+                    multinational companies like Shell, ExxonMobil, and Ceres Power. Currently, Dr. Benaissa is
+                    Product Development Manager at Lynas Rare Earth Ltd. where he oversees Developing and
+                    Implementing Lynas Rare Earth Product Development Strategy.</p>
+
+                <h4>Energy Transition and Industry Decarbonisation: Emerging Pathways and Technologies</h4>
+                <p>Dr. Benaissa will cover the role of low-carbon hydrogen and power-to-X technologies in
+                    industrial decarbonization. He will describe the integration of captured CO₂ from heavy
+                    industries with green or low-carbon hydrogen to reduce emissions. He supports global efforts to
+                    advance hydrogen as a key energy vector, especially in heavy transport. Dr. Benaissa, in his
+                    current role at Lynas Rare Earth Ltd., focuses on developing rare earth-based materials to
+                    support the hydrogen economy and CO₂ valorization.</p>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal -->
+<div class="modal speaker-modal fade" id="speakers-modals-speaker4" tabindex="-1" aria-labelledby="modalLabel-spk4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl topic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-spk4">Efficient Deep Learning for 3D/4D Shape Analysis: From
+                    Medical
+                    Applications to Generative AI
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row align-items-center g-2">
+                    <div class="col-auto">
+                        <img src="assets/img/speakers/hamid-laga.jpg" alt="Speaker illustration"
+                            class="img-fluid rounded-circle" width="100" height="100" />
+                    </div>
+                    <div class="col">
+                        <div class="author-info">
+                            <h5 class="mb-1">By Professor Hamid Laga</h5>
+                            <p class="author-title mb-1">School of Information Technology<br />
+                                Murdoch University<br />
+                                Murdoch, WA, Australia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p><strong>Hamid Laga</strong> is a professor with Murdoch University, Australia. His research
+                    interests span various fields of machine learning, computer vision, computer
+                    graphics, and pattern recognition, with a special focus on the 3D
+                    reconstruction, modeling, and analysis of static and deformable 3D objects,
+                    and on machine learning for agriculture and health. He is the recipient of the
+                    Best Paper Awards with SGP2017, DICTA2012, and SMI2006.</p>
+
+                <h4>Efficient Deep Learning for 3D/4D Shape Analysis: From Medical
+                    Applications to Generative AI</h4>
+                <p>The analysis of 3D and 4D (3D + time) shapes is crucial across diverse
+                    fields, from biology and medicine to computer graphics and virtual reality.
+                    Shape deformation over time is a key feature of many natural and man-
+                    made objects, such as anatomical structures, facial expressions, and human
+                    body movements. Understanding and modeling these deformations, along
+                    with the variability in shape, has applications in medical diagnosis, growth
+                    modeling, and animation. In this talk, Pr. Laga will describe his research on
+                    statistical modeling of static (3D) and dynamic (4D) shapes, focusing on the
+                    development of the Square Normal Fields (SRNF) framework for efficient 3D
+                    shape representation, comparison, and population modeling. The talk will
+                    also delve into statistical analysis of 4D shape data, particularly for
+                    applications in growth and disease progression, and highlight the role of
+                    these models in advancing deep learning and generative AI for 3D/4D
+                    reconstruction and generation from images, videos, and text.</p>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal -->
+<div class="modal speaker-modal fade" id="speakers-modals-speaker5" tabindex="-1" aria-labelledby="modalLabel-spk5"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl topic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-spk5">Smart Battery and Hybrid Energy Storage Systems for
+                    Electric
+                    Vehicles and Drones: Advanced Energy Management Strategies and
+                    Applications
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row align-items-center g-2">
+                    <div class="col-auto">
+                        <img src="assets/img/speakers/tedjani-mesbahi.jpg" alt="Speaker illustration"
+                            class="img-fluid rounded-circle" width="100" height="100" />
+                    </div>
+                    <div class="col">
+                        <div class="author-info">
+                            <h5 class="mb-1">By Dr. Tedjani Mesbahi</h5>
+                            <p class="author-title mb-1">Associate Professor (McF HdR)<br />
+                                INSA Strasbourg<br />
+                                ICube-CNRS laboratory, France</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p><strong>Dr. Tedjani Mesbahi</strong> is an Associate Professor at INSA Strasbourg, affiliated
+                    with the ICube-CNRS laboratory in France, specializing in electrical
+                    engineering and energy management. He holds an Engineer Diploma, M.Sc.,
+                    Ph.D., and HdR, with extensive experience leading national and European
+                    research projects, securing over 10M€ in funding, managing 33 research
+                    projects and contributing to 2 technology transfer and start-up projects. Dr.
+                    Mesbahi has published over 120 papers, patents, and software licenses,
+                    earning recognition as one of the world's top 2% most influential researchers
+                    in electrical engineering, particularly in energy. His research focuses on
+                    optimizing energy management for electric vehicles, using AI to improve
+                    battery performance and longevity. Additionally, Dr. Mesbahi leads training
+                    programs in Industry 4.0 and coordinates research teams, contributing to
+                    the development of innovative solutions in the field.</p>
+
+                <h4>Smart Battery and Hybrid Energy Storage Systems for Electric
+                    Vehicles and Drones: Advanced Energy Management Strategies and
+                    Applications</h4>
+                <p>Dr. Mesbahi’s talk will explore the integration of smart battery systems and
+                    hybrid energy storage solutions, combining batteries and supercapacitors,
+                    for electric vehicles, drones, and domestic applications. He will focus on
+                    advanced energy management strategies using advanced control techniques
+                    and AI algorithms to optimize efficiency, predict the state of health and
+                    extend the lifespan of energy systems. A case study on the ELCOD project,
+                    which developed the Stork Mk.1 UAV, a long endurance hybrid-propulsion
+                    system combining a hydrogen fuel cell (PEMFC) and a LiPo battery is
+                    presented. This study highlights how hybridization can mitigate the durability
+                    challenges of hydrogen fuel cells by optimizing fuel cell sizing for cruising
+                    power and using complementary energy sources (e.g., batteries or
+                    supercapacitors) for peak loads. The talk also compares fixed and adaptive
+                    frequency-based energy management strategies and emphasizes the key
+                    role of supercapacitor state of charge in enhancing system performance and
+                    longevity in EV and drone applications.</p>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Footer -->
 <footer class="pt-4 pb-4 pt-md-5 border-top footer">
     <div class="container">

@@ -697,3 +697,120 @@ a:hover {
     font-weight: bold !important;
     animation: highlightAnimation 2s infinite;
 }
+
+.speaker-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    color: #007305;
+}
+
+.speaker-card:hover {
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #007305;
+}
+
+.speaker-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #007305;
+    border-color: #007305;
+    transition: border-color 0.3s ease;
+}
+
+.speaker-card:hover img {
+    border-color: #fff;
+}
+
+.speaker-card .speaker-name {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: #000 0 0 1px;
+}
+
+.speaker-card .speaker-aff {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.speaker-card:hover .speaker-aff {
+    color: #eee;
+}
+
+.speaker-card button {
+    display: none;
+}
+
+.speaker-modal .modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.speaker-modal .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #00E70B;
+    text-align: center;
+}
+
+.speaker-modal .modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.speaker-modal .author-info h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.speaker-modal .author-title {
+    font-size: 1rem;
+    color: #555;
+}
+
+.speaker-modal .author-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.speaker-modal .author-link:hover {
+    text-decoration: underline;
+}
+
+.speaker-modal .company-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #008000;
+}
+
+.speaker-modal .modal-body h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
+
+.speaker-modal .modal-body p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.speaker-modal .modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
