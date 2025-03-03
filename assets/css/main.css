@@ -274,7 +274,8 @@ body {
         display: none;
     }
 
-    .navbar-nav .open-dropdown .dropdown-menu {
+    .navbar-nav .open-dropdown .dropdown-menu,
+    .navbar-nav .open-dropdown:hover .dropdown-menu {
         display: block;
     }
 
