@@ -270,6 +270,14 @@ body {
         box-shadow: none;
     }
 
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .navbar-nav .open-dropdown .dropdown-menu {
+        display: block;
+    }
+
     .navbar-nav .dropdown.show .dropdown-menu {
         display: block;
     }
@@ -507,6 +515,14 @@ body {
     .swiper-logo-right {
         left: 10px;
         left: calc(50% + 135px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .swiper-logo-right,
+    .swiper-logo-left {
+        display: none;
     }
 }
 
