@@ -230,7 +230,7 @@ body {
     border: none;
     margin-top: 0;
     min-width: 340px;
-    z-index: 1000;
+    z-index: 99000;
 }
 
 .navbar-nav .open-dropdown .dropdown-menu,
