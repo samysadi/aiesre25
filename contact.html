@@ -139,14 +139,21 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    const eventType = isTouchDevice ? "touchend" : "click";
+    const touchEvent = isTouchDevice ? "touchend" : null;
 
     document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-        link.addEventListener(eventType, function(event) {
+        const toggleDropdown = function(event) {
             event.preventDefault();
             let parent = this.closest(".nav-item.dropdown");
             parent.classList.toggle("open-dropdown");
-        });
+        };
+
+        link.addEventListener("click", toggleDropdown);
+        link.addEventListener("dblclick", toggleDropdown);
+
+        if (touchEvent) {
+            link.addEventListener(touchEvent, toggleDropdown);
+        }
     });
 });
 </script>
