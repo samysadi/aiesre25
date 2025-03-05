@@ -108,16 +108,15 @@
                                     href="./committees.html#section-committees-publication">Publication Committee
                                     Chairs</a>
                             </li>
-                            <li><a class="dropdown-item" href="./committees.html#section-committees-webmaster">Webmaster,
-                                    Publ. and Com.
-                                    Committee</a></li>
+                            <li><a class="dropdown-item" href="./committees.html#section-committees-webmaster">Web,
+                                    Pub. and Comm.
+                                    Committee Chairs</a></li>
                             <li><a class="dropdown-item"
                                     href="./committees.html#section-committees-organizing">Organizing Committee
                                     Chairs</a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="./committees.html#section-committees-organizingm">Organizing Committee
-                                    Chairs</a>
+                                    href="./committees.html#section-committees-organizingm">Organizing Committee</a>
                             </li>
                             <li><a class="dropdown-item" href="./committees.html#section-committees-liaison">On-Site and
                                     Liaison
@@ -136,25 +135,25 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    const touchEvent = isTouchDevice ? "touchend" : null;
+    document.addEventListener("DOMContentLoaded", function() {
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        const touchEvent = isTouchDevice ? "touchend" : null;
 
-    document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-        const toggleDropdown = function(event) {
-            event.preventDefault();
-            let parent = this.closest(".nav-item.dropdown");
-            parent.classList.toggle("open-dropdown");
-        };
+        document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
+            const toggleDropdown = function(event) {
+                event.preventDefault();
+                let parent = this.closest(".nav-item.dropdown");
+                parent.classList.toggle("open-dropdown");
+            };
 
-        link.addEventListener("click", toggleDropdown);
-        link.addEventListener("dblclick", toggleDropdown);
+            link.addEventListener("click", toggleDropdown);
+            link.addEventListener("dblclick", toggleDropdown);
 
-        if (touchEvent) {
-            link.addEventListener(touchEvent, toggleDropdown);
-        }
+            if (touchEvent) {
+                link.addEventListener(touchEvent, toggleDropdown);
+            }
+        });
     });
-});
 </script>
 <!-- Sponsors -->
 <section class="page section" id="section-sponsors">
