@@ -1,10 +1,10 @@
 body {
-    background-color: #2a8e30;
+    background-color: #2a8730;
 }
 
 
 .table-dark th {
-    background-color: #2a8e30 !important;
+    background-color: #2a8730 !important;
 }
 
 .page {
@@ -18,7 +18,7 @@ body {
 
 .footer {
     color: #fff;
-    background-color: #2a8e30;
+    background-color: #2a8730;
 }
 
 .footer a {
@@ -59,33 +59,33 @@ body {
 }
 
 .btn-outline-primary {
-    color: #2a8e30;
-    border-color: #2a8e30;
+    color: #2a8730;
+    border-color: #2a8730;
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #2a8e30;
-    border-color: #2a8e30;
+    background-color: #2a8730;
+    border-color: #2a8730;
     text-decoration: none;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #2a8e30;
-    border-color: #2a8e30;
+    background-color: #2a8730;
+    border-color: #2a8730;
 }
 
 .btn-primary:hover {
     color: #fff;
     background-color: #2acf35;
-    border-color: #2a8e30;
+    border-color: #2a8730;
     text-decoration: none;
 }
 
 .main-header {
     background-color: #fff;
-    border-bottom: 1px solid #2a8e30;
+    border-bottom: 1px solid #2a8730;
     text-align: center;
     /*top: 0;
     left: 0;
@@ -98,7 +98,7 @@ body {
     padding: 5px 0;
     font-size: 0.9em;
     font-weight: 500;
-    border-bottom: 1px solid #2a8e30;
+    border-bottom: 1px solid #2a8730;
 }
 
 .ieee-bar-left {
@@ -420,7 +420,7 @@ body {
 }
 
 .swiper-text .conference-link .btn:hover {
-    background: #2a8e30;
+    background: #2a8730;
     color: white;
     border: 2px solid #fff;
 }
@@ -544,7 +544,7 @@ body {
 }
 
 .page header {
-    background-color: #2a8e30;
+    background-color: #2a8730;
     color: #fff;
 }
 
@@ -560,19 +560,19 @@ body {
 }
 
 a {
-    color: #2a8e30;
+    color: #2a8730;
     text-decoration: none;
 }
 
 a:hover {
-    color: #2a8e30;
+    color: #2a8730;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .topic-card img {
     max-width: 100%;
-    border: 1px solid #2a8e30;
+    border: 1px solid #2a8730;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -600,7 +600,7 @@ a:hover {
 
 .contact-card i,
 .date-card i {
-    color: #2a8e30;
+    color: #2a8730;
     font-size: 3rem;
     margin-bottom: 30px;
 }
