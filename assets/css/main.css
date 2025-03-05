@@ -313,6 +313,14 @@ body {
 
 
 
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .nav-link {
+        font-size: 0.9em;
+    }
+}
+
+
+
 /* carousel */
 .swiper-container {
     position: relative;
@@ -417,9 +425,15 @@ body {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .swiper-text {
         font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .swiper-text {
+        font-size: 0.7em;
     }
 }
 
