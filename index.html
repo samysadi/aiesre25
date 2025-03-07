@@ -29,31 +29,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col justify-content-center ieee-bar-left">
-                    <a href="https://www.ieee.org" class="text-dark text small text-decoration-none me-2"
-                        target="_blank">IEEE.org</a> |
-                    <a href="https://ieeexplore.ieee.org/Xplore/home.jsp"
-                        class="text-dark text small text-decoration-none me-2" target="_blank">IEEE Xplore
-                        Digital Library</a> |
-                    <a href="https://standards.ieee.org/" class="text-dark text small text-decoration-none me-2"
-                        target="_blank">IEEE
-                        Standards</a> |
-                    <a href="https://spectrum.ieee.org/" class="text-dark text small text-decoration-none me-2"
-                        target="_blank">IEEE
-                        Spectrum</a>
-                    |
-                    <a href="https://www.ieee.org/sitemap.html" class="text-dark text small text-decoration-none me-2"
-                        target="_blank">More
-                        Sites</a>
-                </div>
+                                    </div>
                 <div
                     class="col text-center text-md-end d-flex align-items-center justify-content-center justify-content-md-end ieee-bar-right">
                     <span class="ieee-logo2"><img src="assets/img/logo.gif" alt="AIESRE"></span>
                     <span class="ieee-logo-sep">|</span>
                     <a href="https://www.ummto.dz/" class="btn btn-small ieee-logo2" target="_blank"><img
                             src="assets/img/ummto-logo.png" alt="UMMTO"></a>
-                    <span class="ieee-logo-sep">|</span>
-                    <a href="https://www.ieee-dz.org/" class="btn btn-small ieee-logo2" target="_blank"><img
-                            src="assets/img/algeriasect1.png" alt="IEEE Algeria Section"></a>
+
                                     </div>
             </div>
         </div>
@@ -133,25 +116,25 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-        const touchEvent = isTouchDevice ? "touchend" : null;
+document.addEventListener("DOMContentLoaded", function() {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const touchEvent = isTouchDevice ? "touchend" : null;
 
-        document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-            const toggleDropdown = function(event) {
-                event.preventDefault();
-                let parent = this.closest(".nav-item.dropdown");
-                parent.classList.toggle("open-dropdown");
-            };
+    document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
+        const toggleDropdown = function(event) {
+            event.preventDefault();
+            let parent = this.closest(".nav-item.dropdown");
+            parent.classList.toggle("open-dropdown");
+        };
 
-            link.addEventListener("click", toggleDropdown);
-            link.addEventListener("dblclick", toggleDropdown);
+        link.addEventListener("click", toggleDropdown);
+        link.addEventListener("dblclick", toggleDropdown);
 
-            if (touchEvent) {
-                link.addEventListener(touchEvent, toggleDropdown);
-            }
-        });
+        if (touchEvent) {
+            link.addEventListener(touchEvent, toggleDropdown);
+        }
     });
+});
 </script>
 <!-- Carousel -->
 <section class="section overflow-hidden" id="section-home">
@@ -195,16 +178,16 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col social-icons">
-                <a href="https://www.twitter.com/ieee" target="_blank" aria-label="Twitter"><i
+                <a href="https://www.twitter.com/univ_tizi" target="_blank" aria-label="Twitter"><i
                         class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.facebook.com/ieee" target="_blank" aria-label="Facebook"><i
+                <a href="https://www.facebook.com/www.ummto.dz/" target="_blank" aria-label="Facebook"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ieee" target="_blank" aria-label="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/ieee" target="_blank" aria-label="Linkedin"><i
+                <a href="https://www.instagram.com/universite_mouloud_mammeri/" target="_blank"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/15091849/" target="_blank" aria-label="Linkedin"><i
                         class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/c/IEEE" target="_blank" aria-label="Youtube"><i
-                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.youtube.com/channel/UCEVY9_NdHhkJMJdzGhvikrw" target="_blank"
+                    aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="col text-center text-md-end">
                             </div>
@@ -212,13 +195,8 @@
         <div class="divider"></div>
         <div class="mb-2">
             <a href="./index.html">Home</a> |
-            <a href="./contact.html">Contact</a> |
-            <a href="https://www.ieee.org/accessibility_statement.html" target="_blank">Accessibility</a> |
-            <a href="https://www.ieee.org/nondiscrimination" target="_blank">Nondiscrimination Policy</a> |
-            <a href="http://www.ieee-ethics-reporting.org/" target="_blank">IEEE Ethics Reporting</a> |
-            <a href="https://www.ieee.org/about/help/security_privacy.html" target="_blank">IEEE Privacy Policy</a> |
-            <a href="https://www.ieee.org/about/help/site_terms_conditions.html" target="_blank">Terms & Disclosures</a>
-        </div>
+            <a href="./contact.html">Contact</a>
+                    </div>
             </div>
 </footer>
 <!-- Scripts -->
