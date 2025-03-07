@@ -37,6 +37,10 @@
                     <a href="https://www.ummto.dz/" class="btn btn-small ieee-logo2" target="_blank"><img
                             src="assets/img/ummto-logo.png" alt="UMMTO"></a>
 
+                    <span class="ieee-logo-sep">|</span>
+                    <a href="https://www.ieee-dz.org/" class="btn btn-small ieee-logo2" target="_blank"><img
+                            src="assets/img/algeriasect1.png" alt="IEEE Algeria Section"></a>
+                    <span class="ieee-logo-sep">|</span>
                                     </div>
             </div>
         </div>
@@ -116,25 +120,25 @@
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    const touchEvent = isTouchDevice ? "touchend" : null;
+    document.addEventListener("DOMContentLoaded", function() {
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        const touchEvent = isTouchDevice ? "touchend" : null;
 
-    document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-        const toggleDropdown = function(event) {
-            event.preventDefault();
-            let parent = this.closest(".nav-item.dropdown");
-            parent.classList.toggle("open-dropdown");
-        };
+        document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
+            const toggleDropdown = function(event) {
+                event.preventDefault();
+                let parent = this.closest(".nav-item.dropdown");
+                parent.classList.toggle("open-dropdown");
+            };
 
-        link.addEventListener("click", toggleDropdown);
-        link.addEventListener("dblclick", toggleDropdown);
+            link.addEventListener("click", toggleDropdown);
+            link.addEventListener("dblclick", toggleDropdown);
 
-        if (touchEvent) {
-            link.addEventListener(touchEvent, toggleDropdown);
-        }
+            if (touchEvent) {
+                link.addEventListener(touchEvent, toggleDropdown);
+            }
+        });
     });
-});
 </script>
 <!-- Sponsors -->
 <section class="page section" id="section-sponsors">
@@ -230,6 +234,34 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
 
+                <div class="col-12 col-lg-6">
+                    <div class="card sponsor-card h-100">
+                        <div class="card-header">
+                            <h3 class="card-title"><a href="http://www.ampolytech.com/" target="_blank">American
+                                    Polytechnic Institute (API)</a></h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-12 col-md-4">
+                                    <div class="card-img"><a href="http://www.ampolytech.com/" target="_blank"><img
+                                                src="assets/img/sponsors/api.jpg"
+                                                alt="American Polytechnic Institute (API)"></a></div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="card-text text-justify">
+                                        <p>The American Polytechnic Institute (API) is committed to providing
+                                            high-quality education and training in engineering and technology. API
+                                            focuses on fostering innovation, research, and industry collaboration to
+                                            equip students with the necessary skills to excel in modern technological
+                                            fields.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 
                 <div class="col-12 col-lg-6">
                     <div class="card sponsor-card h-100">
@@ -247,7 +279,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </div>
                                 <div class="col-12 col-md-8">
                                     <div class="card-text text-justify">
-                                        <p>The IEEE Power & Energy Society (PES) is a leading organization focused on
+                                        <p>The IEEE Power & Energy Society (PES) Algeria Section is a chapter of IEEE
+                                            PES, a leading organization focused on
                                             the
                                             development and application of technology in the electric power and energy
                                             industry.
@@ -276,7 +309,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </div>
                                 <div class="col-12 col-md-8">
                                     <div class="card-text text-justify">
-                                        <p>The IEEE Power Electronics Society (PELS) is dedicated to promoting
+                                        <p>The IEEE Power Electronics Society (PELS) Algeria Section is a chapter of
+                                            IEEE PELS, dedicated to promoting
                                             technological
                                             advancements in power electronics. PELS supports research, education, and
                                             collaboration among professionals working on power conversion, energy
