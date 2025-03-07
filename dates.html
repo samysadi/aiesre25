@@ -40,7 +40,6 @@
                     <span class="ieee-logo-sep">|</span>
                     <a href="https://www.ieee-dz.org/" class="btn btn-small ieee-logo2" target="_blank"><img
                             src="assets/img/algeriasect1.png" alt="IEEE Algeria Section"></a>
-                    <span class="ieee-logo-sep">|</span>
                                     </div>
             </div>
         </div>
@@ -120,25 +119,25 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-        const touchEvent = isTouchDevice ? "touchend" : null;
+document.addEventListener("DOMContentLoaded", function() {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const touchEvent = isTouchDevice ? "touchend" : null;
 
-        document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
-            const toggleDropdown = function(event) {
-                event.preventDefault();
-                let parent = this.closest(".nav-item.dropdown");
-                parent.classList.toggle("open-dropdown");
-            };
+    document.querySelectorAll(".nav-item.dropdown > .nav-link").forEach(link => {
+        const toggleDropdown = function(event) {
+            event.preventDefault();
+            let parent = this.closest(".nav-item.dropdown");
+            parent.classList.toggle("open-dropdown");
+        };
 
-            link.addEventListener("click", toggleDropdown);
-            link.addEventListener("dblclick", toggleDropdown);
+        link.addEventListener("click", toggleDropdown);
+        link.addEventListener("dblclick", toggleDropdown);
 
-            if (touchEvent) {
-                link.addEventListener(touchEvent, toggleDropdown);
-            }
-        });
+        if (touchEvent) {
+            link.addEventListener(touchEvent, toggleDropdown);
+        }
     });
+});
 </script>
 <!-- Important dates -->
 <section class="page section" id="section-dates">
